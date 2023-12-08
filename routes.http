@@ -1,0 +1,31 @@
+POST http://localhost:3333/cachorro
+Content-Type: application/json
+
+{
+    "raca": "pinscher",
+    "dono": "Camila",
+    "idade": "4 anos"
+}
+
+###
+
+GET http://localhost:3333/cachorro
+
+###
+
+GET http://localhost:3333/cachorro?search=pitbull
+
+###
+
+PUT http://localhost:3333/cachorros/f43a9a30-83e3-4206-b193-0189e49b5009
+Content-Type: application/json
+
+{
+    "raca": "pitbull",
+    "dono": "Lays",
+    "idade": "1 ano"
+}
+
+###
+
+DELETE http://localhost:3333/cachorros/f43a9a30-83e3-4206-b193-0189e49b5009
